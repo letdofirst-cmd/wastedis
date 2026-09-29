@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How it works — EcoPulse</title>
+<meta name="description" content="Smart waste management: report waste, verify collection with AI, earn EcoCredits.">
+<meta name="theme-color" content="#0F5132">
+<script>try{var t=localStorage.getItem('ecopulse-theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');document.documentElement.dataset.theme=t}catch(e){}</script>
+<script src="assets/js/api.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body data-view="">
+<div id="loader"><div class="ld"><i class="fa-solid fa-leaf"></i>EcoPulse</div></div>
+<div id="toasts" aria-live="polite"></div>
+
+<nav><div class="wrap">
+<a href="index.html" class="logo"><i class="fa-solid fa-leaf"></i>EcoPulse</a>
+<div class="links" id="links"><a href="index.html">Home</a><a href="features.html">Features</a><a href="how-it-works.html" class="on" aria-current="page">How it works</a><a href="app/community.html">Dashboard</a><a href="app/community.html">Community</a><a href="about.html">About</a><a href="contact.html">Contact</a></div>
+<div style="display:flex;gap:10px">
+<button class="ib" id="theme" aria-label="Toggle dark mode"><i class="fa-solid fa-moon"></i></button>
+<button class="ib" id="burger" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+</div></div></nav>
+
+<section id="how"><div class="wrap">
+<h2 class="t" style="text-align:center">How it works</h2><p class="s" style="margin:0 auto 40px;text-align:center">From report to reward in five steps.</p>
+<div class="tl" id="tl"><div class="fill"></div>
+<div class="glass stp" data-n="1"><h4>Citizen reports waste</h4><p>Photo, location and category in under a minute.</p></div>
+<div class="glass stp" data-n="2"><h4>Worker receives task</h4><p>The nearest worker gets the job on today's route.</p></div>
+<div class="glass stp" data-n="3"><h4>QR scan</h4><p>The worker scans the household or bin QR code.</p></div>
+<div class="glass stp" data-n="4"><h4>AI verifies</h4><p>The camera classifies the waste and checks segregation.</p></div>
+<div class="glass stp" data-n="5"><h4>Waste collected, EcoCredits earned</h4><p>Credits land in the citizen's wallet instantly.</p></div>
+</div></div></section>
+<section style="padding-top:20px"><div class="wrap"><div class="glass cta"><h2 class="t">Ready to try EcoPulse?</h2><p>Create a citizen profile and file your first report in under a minute.</p><a class="btn p" href="app/community.html"><i class="fa-solid fa-rocket"></i> Open the workspace</a></div></div></section>
+
+<footer><div class="wrap"><div><div class="logo"><i class="fa-solid fa-leaf"></i>EcoPulse</div><small>© 2026 EcoPulse · Smart India Hackathon demo</small></div><div class="fl"><a href="index.html">Home</a><a href="features.html">Features</a><a href="how-it-works.html">How it works</a><a href="app/community.html">Dashboard</a><a href="about.html">About</a><a href="contact.html">Contact</a></div><div class="soc"><a class="ib" href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a><a class="ib" href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a><a class="ib" href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a><a class="ib" href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></div></div></footer>
+
+<button class="ib glass" id="top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+<div id="fab"><div class="m"><a class="fb" href="app/community.html" title="Choose a community to report an issue"><i class="fa-solid fa-camera"></i></a></div><button class="fb" id="fabm" aria-label="Quick actions"><i class="fa-solid fa-plus"></i></button></div>
+<script src="assets/js/core.js"></script><script src="assets/js/site.js"></script>
+</body>
+</html>

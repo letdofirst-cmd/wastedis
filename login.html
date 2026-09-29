@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sign in — EcoPulse</title>
+<meta name="description" content="Sign in to your EcoPulse workspace.">
+<meta name="theme-color" content="#0F5132">
+<script>try{var t=localStorage.getItem('ecopulse-theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');document.documentElement.dataset.theme=t}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="login-page" data-view="">
+<div id="loader"><div class="ld"><i class="fa-solid fa-leaf"></i>EcoPulse</div></div>
+<div id="toasts" aria-live="polite"></div>
+
+<nav><div class="wrap">
+<a href="index.html" class="logo"><i class="fa-solid fa-leaf"></i>EcoPulse</a>
+<div class="links" id="links"><a href="index.html">Home</a><a href="features.html">Features</a><a href="how-it-works.html">How it works</a><a href="app/community.html">Dashboard</a><a href="app/community.html">Community</a><a href="about.html">About</a><a href="contact.html">Contact</a></div>
+<div style="display:flex;gap:10px">
+<button class="ib" id="theme" aria-label="Toggle dark mode"><i class="fa-solid fa-moon"></i></button>
+<button class="ib" id="burger" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+</div></div></nav>
+
+<main class="login-main"><div class="wrap login-wrap"><div class="login-panel">
+<section class="login-story">
+<div class="login-kicker"><i class="fa-solid fa-leaf"></i> Cleaner streets, together</div>
+<div><h1>Your city, moving toward a cleaner future.</h1><p>Sign in to keep track of reports, verified pickups, and EcoCredits in one place.</p>
+<div class="login-steps"><div class="login-step"><i class="fa-solid fa-camera"></i><span>Report issues</span></div><div class="login-step"><i class="fa-solid fa-truck"></i><span>Track collection</span></div><div class="login-step"><i class="fa-solid fa-coins"></i><span>Earn EcoCredits</span></div></div></div>
+<div class="login-kicker"><i class="fa-solid fa-location-dot"></i> Built for cleaner neighborhoods</div>
+</section>
+<section class="login-form" aria-labelledby="login-title">
+<span class="login-eyebrow">WELCOME BACK</span><h2 id="login-title">Sign in to EcoPulse</h2><p class="login-subtitle">Use your account details to continue.</p>
+<form id="loginForm">
+<div class="login-profile-fields" id="profileFields" hidden>
+<label for="fullName">Full name</label><input class="in" id="fullName" name="name" autocomplete="name" maxlength="80" placeholder="Your name">
+<label for="state">State</label><input class="in" id="state" name="state" autocomplete="address-level1" maxlength="100" placeholder="Your state">
+<label for="city">City</label><input class="in" id="city" name="city" autocomplete="address-level2" maxlength="100" placeholder="Your city">
+<label for="wardVillage">Ward / village / locality</label><input class="in" id="wardVillage" name="wardVillage" autocomplete="address-level3" maxlength="120" placeholder="Your ward, village, or locality">
+<button class="btn g login-gps" id="verifyLocation" type="button"><i class="fa-solid fa-location-crosshairs"></i> Use GPS to fill or verify</button>
+<p class="login-location-feedback" id="locationFeedback" role="status" aria-live="polite"></p>
+<small class="login-privacy">GPS coordinates are sent to OpenStreetMap Nominatim for a location check and cached for up to 30 days. Exact coordinates are not saved on your account. Map data © OpenStreetMap contributors. <a href="https://operations.osmfoundation.org/policies/nominatim/" target="_blank" rel="noopener noreferrer">Usage policy</a></small>
+</div>
+<label for="email">Email address</label><input class="in" id="email" name="email" type="email" autocomplete="username" maxlength="254" placeholder="you@example.com" required>
+<label for="password">Password</label><div class="login-password"><input class="in" id="password" name="password" type="password" autocomplete="current-password" minlength="12" maxlength="128" placeholder="At least 12 characters" required><button id="togglePassword" type="button" aria-label="Show password" title="Show password"><i class="fa-solid fa-eye"></i></button></div>
+<button class="btn p login-submit" id="loginSubmit" type="submit">Sign in <i class="fa-solid fa-arrow-right"></i></button>
+<p class="login-feedback" id="loginFeedback" role="status" aria-live="polite"></p>
+<button class="login-mode" id="modeToggle" type="button">New to EcoPulse? Create an account</button>
+</form>
+<div class="login-demo">Just exploring?<br><a href="app/community.html">Open the demo workspace <i class="fa-solid fa-arrow-right"></i></a></div>
+</section>
+</div></div></main>
+
+<footer><div class="wrap"><div><div class="logo"><i class="fa-solid fa-leaf"></i>EcoPulse</div><small>© 2026 EcoPulse · Smart India Hackathon demo</small></div><div class="fl"><a href="index.html">Home</a><a href="features.html">Features</a><a href="app/community.html">Dashboard</a><a href="contact.html">Contact</a></div></div></footer>
+<button class="ib glass" id="top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+<div id="fab" hidden><button id="fabm" type="button" aria-label="Quick actions"></button></div>
+<script src="assets/js/api.js"></script><script src="assets/js/core.js"></script><script src="assets/js/pages/login.js"></script>
+</body>
+</html>
